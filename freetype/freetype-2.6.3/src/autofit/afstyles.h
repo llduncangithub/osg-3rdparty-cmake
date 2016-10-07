@@ -97,7 +97,7 @@
          AF_BLUE_STRINGSET_BENG,
          AF_COVERAGE_DEFAULT )
 
-  META_STYLE_LATIN( cyrl, CYRL, "Cyrillic" )
+  //META_STYLE_LATIN( cyrl, CYRL, "Cyrillic" )
 
   STYLE( deva_dflt, DEVA_DFLT,
          "Devanagari default style",

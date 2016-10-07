@@ -240,3 +240,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/3rdParty/v140-x64
+/install_manifest.txt
