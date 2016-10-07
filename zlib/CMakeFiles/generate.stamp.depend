@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/zlib/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CheckCSourceCompiles.cmake
+D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/zlib/zlib-1.2.8/zlib.pc.cmakein
+D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/zlib/zlib-1.2.8/zconf.h.cmakein

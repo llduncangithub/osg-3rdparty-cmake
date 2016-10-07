@@ -1,0 +1,13 @@
+prefix=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake
+exec_prefix=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake
+libdir=
+sharedlibdir=
+includedir=
+
+Name: zlib
+Description: zlib compression library
+Version: 
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

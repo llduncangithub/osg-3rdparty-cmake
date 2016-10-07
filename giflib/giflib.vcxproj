@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E6D22CDE-FD0D-36B0-8A2A-4CBD5650BD71}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>giflib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">giflib.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">giflibd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">giflib.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">giflib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4028;4244;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_LIB;WIN32;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_LIB;WIN32;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4028;4244;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_LIB;WIN32;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_LIB;WIN32;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/giflib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake -BD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake --check-stamp-file D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/giflib/CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\unistd.h.in;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/giflib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake -BD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake --check-stamp-file D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/giflib/CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\unistd.h.in;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\gif_lib_private.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\gif_hash.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\getopt.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\unistd.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\gif_lib.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\stdbool.h" />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\dgif_lib.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\egif_lib.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\gif_err.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\gif_font.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\gif_hash.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\gifalloc.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\quantize.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\giflib-code-5.12\lib\openbsd-reallocarray.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\giflib\getopt.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/ZERO_CHECK.vcxproj">
+      <Project>E8139547-F685-32FC-813F-E5E3E6B50647</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

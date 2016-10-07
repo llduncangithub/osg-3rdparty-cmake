@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{527DE033-200A-3EA6-A058-66693D7C6773}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libtiff</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libtiff.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libtiffd_i</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libtiff.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libtiff_i</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib\zlib-1.2.8;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg\jpeg-9b;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_SNPRINTF;_CRT_SECURE_NO_WARNINGS;_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_SNPRINTF;_CRT_SECURE_NO_WARNINGS;_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib\zlib-1.2.8;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg\jpeg-9b;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib\zlib-1.2.8;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg\jpeg-9b;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib\zlib-1.2.8;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg\jpeg-9b;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SNPRINTF;_CRT_SECURE_NO_WARNINGS;_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_SNPRINTF;_CRT_SECURE_NO_WARNINGS;_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib\zlib-1.2.8;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg\jpeg-9b;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib\zlib-1.2.8;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\zlib;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg\jpeg-9b;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/libtiff/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake -BD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake --check-stamp-file D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/libtiff/CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_config.vc.h;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tiffconf.vc.h;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/libtiff/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake -BD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake --check-stamp-file D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/libtiff/CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_config.vc.h;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tiffconf.vc.h;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tif_config.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_dir.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_fax3.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_predict.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tiffiop.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\t4.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\uvcode.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiffconf.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tiff.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tiffio.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tiffvers.h" />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_aux.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_close.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_codec.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_color.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_compress.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_dir.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_dirinfo.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_dirread.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_dirwrite.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_dumpmode.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_error.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_extension.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_fax3.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_fax3sm.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_flush.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_getimage.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_jbig.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_jpeg.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_luv.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_lzw.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_next.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_ojpeg.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_open.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_packbits.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_pixarlog.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_predict.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_print.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_read.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_strip.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_swab.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_thunder.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_tile.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_version.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_warning.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_win32.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_write.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\libtiff\tiff-4.0.6\libtiff\tif_zip.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/ZERO_CHECK.vcxproj">
+      <Project>E8139547-F685-32FC-813F-E5E3E6B50647</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/libjpeg/jpeg.vcxproj">
+      <Project>17874963-14C4-3569-AEED-363183E35AA6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/zlib/zlib.vcxproj">
+      <Project>F07105C0-032C-370E-AB64-860673985A16</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

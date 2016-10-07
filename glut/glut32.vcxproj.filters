@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_8x13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_9x15.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_bitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_bwidth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_cindex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_cmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_cursor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_dials.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_dstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_event.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_ext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_fullscrn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_gamemode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_get.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_hel10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_hel12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_hel18.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_joy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_key.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_keyctrl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_keyup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_mesa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_modifier.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_mroman.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_overlay.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_roman.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_shapes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_space.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_stroke.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_swap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_swidth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_tablet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_teapot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_tr10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_tr24.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_vidresize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_warp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_winmisc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_glx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_winproc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_x11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\include\GL\glut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A2CAE911-5CD3-3847-A708-4F7397229F7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B09C0CD9-0433-3A43-9B5C-EF47462246D9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

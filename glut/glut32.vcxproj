@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{46AAB38E-09AE-3DD4-AF85-79D728BE0830}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>glut32</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glut32.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glut32d</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glut32.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glut32</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4133;4554;4996;4715</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4133;4554;4996;4715</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/glut/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake -BD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake --check-stamp-file D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/glut/CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/glut/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake -BD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake --check-stamp-file D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/glut/CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\include\GL\glut.h" />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_8x13.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_9x15.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_bitmap.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_bwidth.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_cindex.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_cmap.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_cursor.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_dials.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_dstr.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_event.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_ext.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_fullscrn.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_gamemode.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_get.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_hel10.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_hel12.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_hel18.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_init.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_input.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_joy.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_key.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_keyctrl.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_keyup.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_mesa.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_modifier.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_mroman.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_overlay.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_roman.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_shapes.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_space.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_stroke.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_swap.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_swidth.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_tablet.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_teapot.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_tr10.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_tr24.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_util.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_vidresize.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_warp.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_win.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\glut_winmisc.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_glx.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_menu.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_util.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_winproc.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\glut\glut-3.7\lib\glut\win32_x11.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/ZERO_CHECK.vcxproj">
+      <Project>E8139547-F685-32FC-813F-E5E3E6B50647</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

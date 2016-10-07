@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A77CFBCA-D9D1-3355-8861-39FCE01F5D78}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libcurl</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libcurl.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libcurld</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libcurl.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libcurl</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4133;4554;4996;4715</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILDING_LIBCURL;USE_WIN32_LDAP;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILDING_LIBCURL;USE_WIN32_LDAP;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;wldap32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/lib/Debug/libcurld.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/lib/Debug/libcurld.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4133;4554;4996;4715</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;USE_WIN32_LDAP;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_LIBCURL;USE_WIN32_LDAP;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";libcurl_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;wldap32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/lib/Release/libcurl.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/lib/Release/libcurl.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake -BD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake --check-stamp-file D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/curl/CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake -BD:/Workspace/opensource/OSG/code/osg-3rdparty-cmake --check-stamp-file D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/curl/CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeLists.txt;D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curl.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curlbuild.h.in" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\easy.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curlver.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curlrules.h" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\multi.h" />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\amigaos.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\asyn-ares.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\asyn-thread.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\base64.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\conncache.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\connect.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\content_encoding.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\cookie.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_addrinfo.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_des.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_endian.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_fnmatch.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_gethostname.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_gssapi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_memrchr.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_multibyte.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_ntlm_core.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_ntlm_wb.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_rtmp.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_sasl.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_sspi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\curl_threads.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\dict.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\dotdot.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\easy.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\escape.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\file.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\fileinfo.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\formdata.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\ftp.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\ftplistparser.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\getenv.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\getinfo.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\gopher.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\hash.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\hmac.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\hostasyn.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\hostcheck.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\hostip.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\hostip4.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\hostip6.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\hostsyn.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\http.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\http2.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\http_chunks.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\http_digest.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\http_ntlm.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\http_negotiate.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\http_proxy.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\idn_win32.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\if2ip.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\imap.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\inet_ntop.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\inet_pton.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\krb5.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\ldap.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\llist.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\md4.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\md5.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\memdebug.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\mprintf.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\multi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\netrc.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\non-ascii.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\nonblock.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\nwlib.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\nwos.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\openldap.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\parsedate.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\pingpong.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\pipeline.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\pop3.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\progress.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\rawstr.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\rtsp.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\security.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\select.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\sendf.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\share.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\slist.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\smb.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\smtp.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\socks.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\socks_gssapi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\socks_sspi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\speedcheck.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\splay.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\ssh.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\strdup.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\strequal.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\strerror.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\strtok.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\strtoofft.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\system_win32.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\telnet.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\tftp.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\timeval.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\transfer.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\url.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\version.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\warnless.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\wildcard.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\x509asn1.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\cleartext.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\cram.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\digest.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\digest_sspi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\krb5_gssapi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\ntlm.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\ntlm_sspi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\oauth2.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\spnego_gssapi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\spnego_sspi.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vauth\vauth.c"  />
+    <ClCompile Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\lib\vtls\vtls.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/ZERO_CHECK.vcxproj">
+      <Project>E8139547-F685-32FC-813F-E5E3E6B50647</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
