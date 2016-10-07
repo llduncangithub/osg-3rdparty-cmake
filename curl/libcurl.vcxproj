@@ -172,7 +172,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curl.h" />
-    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curlbuild.h.in" />
+    <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curlbuild.h" />
     <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\easy.h" />
     <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curlver.h" />
     <ClInclude Include="D:\Workspace\opensource\OSG\code\osg-3rdparty-cmake\curl\curl-curl-7_49_1\include\curl\curlrules.h" />
