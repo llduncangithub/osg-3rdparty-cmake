@@ -147,13 +147,13 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 CURL_SOURCE_DIR:PATH=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/curl/curl-curl-7_49_1
 
 //Path to a file.
-FREETYPE_CONFIG_DIR:PATH=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/freetype/freetype-2.6.3/include/freetype/config
+FREETYPE_CONFIG_DIR:PATH=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/freetype/freetype-2.6.2/include/freetype/config
 
 //Path to a file.
-FREETYPE_HEADERS_DIR:PATH=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/freetype/freetype-2.6.3/include/freetype
+FREETYPE_HEADERS_DIR:PATH=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/freetype/freetype-2.6.2/include/freetype
 
 //Path where to find FREETYPE source
-FREETYPE_SOURCE_DIR:PATH=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/freetype/freetype-2.6.3
+FREETYPE_SOURCE_DIR:PATH=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/freetype/freetype-2.6.2
 
 //Path where to find GIFLIB source
 GIFLIB_SOURCE_DIR:PATH=D:/Workspace/opensource/OSG/code/osg-3rdparty-cmake/giflib/giflib-code-5.12
